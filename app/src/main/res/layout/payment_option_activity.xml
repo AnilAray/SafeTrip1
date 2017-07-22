@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context=".ui.PaymentOptionActivity">
+
+    <include layout="@layout/toolbar2_activity" />
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_saved_debit_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Saved Dedit Details"
+            android:textColor="#ffffff"
+            android:textSize="21sp" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radio_btncard1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="20dp"
+            android:text="5697XXXXXXXXXXXX"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5pt"
+            android:background="#ffffff" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radio_btncard2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="20dp"
+            android:text="0856XXXXXXXXXXXX"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5pt"
+            android:background="#ffffff" />
+
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radio_btncard3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="20dp"
+            android:text="3152XXXXXXXXXXXX"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5pt"
+            android:background="#ffffff" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

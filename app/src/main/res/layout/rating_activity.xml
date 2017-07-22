@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black">
+
+    <include layout="@layout/toolbar_activity"/>
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:text="Rate Your Ride"
+    android:textColor="@android:color/white"
+    android:gravity="center"
+    android:textSize="20dp"
+        android:id="@+id/tv_rateride"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_avtaar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/avatar" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textColor="@android:color/white"
+    android:text="JOHN DOE"
+    android:textSize="18dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/tv_drivername"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="72dp"
+            android:background="@null"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good"
+        android:textSize="19dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:id="@+id/tv_rating"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="15dp"
+        android:inputType="text"
+        android:background="@null"
+        android:hint="Write a thank you note"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:id="@+id/et_thankyounote"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5pt"
+        android:background="#ffffff" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_bg_mdpi"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:id="@+id/btn_submit"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#C50D0D"
+        android:textSize="17dp"
+        android:background="@null"
+        android:layout_gravity="center"
+        android:text="Help?"
+        android:id="@+id/btn_help"/>
+
+</LinearLayout>
+

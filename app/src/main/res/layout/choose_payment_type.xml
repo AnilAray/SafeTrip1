@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar2_activity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rg_paymnttype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_btn_insurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick=""
+                android:paddingBottom="20dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="20dp"
+                android:text="Insurance"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5pt"
+                android:background="#ffffff" />
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ll_addcardInsurance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:background="#191919"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="187dp">
+
+                <EditText
+                    android:id="@+id/et_creditcardnumberInsurance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@drawable/card"
+                    android:drawablePadding="8dp"
+                    android:hint="insurance number"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:paddingStart="8dp"
+                    android:textColor="#F9F6F6"
+                    android:textColorHint="#F9F6F6"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/linearLayoutInsurance"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--app:layout_constraintLeft_toLeftOf="parent"-->
+                <!--app:layout_constraintRight_toRightOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/et_creditcardnumberInsurance">-->
+
+                <!--<EditText-->
+                <!--android:id="@+id/datecredit1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:drawableLeft="@drawable/date_icon"-->
+                <!--android:drawablePadding="8dp"-->
+                <!--android:editable="false"-->
+                <!--android:inputType="none"-->
+                <!--android:paddingStart="8dp"-->
+                <!--android:text="10/07"-->
+                <!--android:textColor="#F9F6F6"-->
+                <!--android:textColorHint="#F9F6F6" />-->
+
+                <!--<EditText-->
+                <!--android:id="@+id/cvvCredit1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginStart="8dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:drawableLeft="@drawable/lock"-->
+                <!--android:drawablePadding="8dp"-->
+                <!--android:inputType="date"-->
+                <!--android:maxLength="3"-->
+                <!--android:paddingStart="8dp"-->
+                <!--android:text="CVV"-->
+                <!--android:textColor="#F9F6F6"-->
+                <!--android:textColorHint="#F9F6F6" />-->
+
+                <!--</LinearLayout>-->
+
+                <Button
+                    android:id="@+id/button_creditInsurance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorAccent"
+                    android:text="SUBMIT"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_creditcardnumberInsurance"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <RadioButton
+                android:id="@+id/radio_btn_debitcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick=""
+                android:paddingBottom="20dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="20dp"
+                android:text="Debit Card"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <!--add the constraint-->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ll_addcardDebitcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:background="#191919"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="187dp">
+
+                <EditText
+                    android:id="@+id/et_creditcardnumber1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@drawable/card"
+                    android:drawablePadding="8dp"
+                    android:hint="xxxx-xxxx-xxxx-xxxx"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:paddingStart="8dp"
+                    android:textColor="#F9F6F6"
+                    android:textColorHint="#F9F6F6"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_creditcardnumber1">
+
+                    <EditText
+                        android:id="@+id/datecredit1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/date_icon"
+                        android:drawablePadding="8dp"
+                        android:editable="false"
+                        android:inputType="none"
+                        android:paddingStart="8dp"
+                        android:text="10/07"
+                        android:textColor="#F9F6F6"
+                        android:textColorHint="#F9F6F6" />
+
+                    <EditText
+                        android:id="@+id/cvvCredit1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/lock"
+                        android:drawablePadding="8dp"
+                        android:hint="CVV"
+                        android:inputType="date"
+                        android:maxLength="3"
+                        android:paddingStart="8dp"
+                        android:textColor="#F9F6F6"
+                        android:textColorHint="#F9F6F6" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_credit1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorAccent"
+                    android:text="SUBMIT"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5pt"
+                android:background="#ffffff" />
+
+
+            <RadioButton
+                android:id="@+id/radio_btn_creditcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="20dp"
+                android:text="Credit Card"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ll_addcard2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:background="#191919"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="187dp">
+
+                <EditText
+                    android:id="@+id/et_creditcardnumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@drawable/card"
+                    android:drawablePadding="8dp"
+                    android:hint="xxxx-xxxx-xxxx-xxxx"
+                    android:inputType="number"
+                    android:paddingStart="8dp"
+                    android:textColor="#F9F6F6"
+                    android:textColorHint="#F9F6F6"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_creditcardnumber">
+
+                    <EditText
+                        android:id="@+id/datecredit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/date_icon"
+                        android:drawablePadding="8dp"
+                        android:editable="false"
+                        android:inputType="none"
+                        android:paddingStart="8dp"
+                        android:text="10/07"
+                        android:textColor="#F9F6F6"
+                        android:textColorHint="#F9F6F6" />
+
+                    <EditText
+                        android:id="@+id/cvvCredit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/lock"
+                        android:drawablePadding="8dp"
+                        android:hint="CVV"
+                        android:inputType="date"
+                        android:maxLength="3"
+                        android:paddingStart="8dp"
+                        android:textColor="#F9F6F6"
+                        android:textColorHint="#F9F6F6" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_credit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorAccent"
+                    android:text="SUBMIT"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+</LinearLayout>

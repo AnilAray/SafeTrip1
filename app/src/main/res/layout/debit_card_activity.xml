@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar2_activity" />
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_save_debit_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:text="Saved Dedit Details"
+            android:textColor="#ffffff"
+            android:textSize="21sp" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radio_btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="20dp"
+            android:text="5697XXXXXXXXXXXX"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5pt"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#ffffff" />
+
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radio_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="20dp"
+            android:text="0856XXXXXXXXXXXX"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#151515"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_cvc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="8dp"
+                android:hint="CVV"
+                android:inputType="numberPassword"
+                android:textColor="#F9F6F6"
+                android:textColorHint="#F9F6F6"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5pt"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="24dp"
+                android:background="#ffffff" />
+
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/cvc"
+                android:layout_margin="30dp"
+                android:background="@drawable/button_bg_mdpi"
+                android:text="SUBMIT"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radio_btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="20dp"
+            android:text="3152XXXXXXXXXXXX"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5pt"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#ffffff" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

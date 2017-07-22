@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar2_activity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_avtaar_account_setting"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginStart="15dp"
+                    android:clickable="true"
+                    android:src="@drawable/avatar"
+                    android:layout_alignParentLeft="true" />
+
+                <EditText
+                    android:id="@+id/et_drivername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:editable="false"
+                    android:hint="John Deo"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="20sp"
+                    android:layout_alignBottom="@+id/img_editaccount"
+                    android:layout_alignLeft="@+id/dmobile"
+                    android:layout_alignStart="@+id/dmobile" />
+
+
+                <EditText
+                    android:id="@+id/dmobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_drivername"
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@+id/img_avtaar_account_setting"
+                    android:background="@null"
+                    android:editable="false"
+                    android:hint="+1-123-150-682"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="19sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/img_avtaar_account_setting" />
+
+                <ImageView
+                    android:id="@+id/img_editaccount"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="14dp"
+                    android:onClick="accountedit"
+                    android:src="@drawable/icon_red_edit_mdpi"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="14dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5pt"
+                android:background="#666666" />
+
+
+            <TextView
+                android:id="@+id/tv_favarities"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Favorites"
+                android:textColor="@android:color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_home"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="16dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/home_white"
+                android:drawablePadding="16dp"
+                android:drawableRight="@drawable/cross"
+                android:text="Home"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_homeaddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="64dp"
+                android:background="@null"
+                android:hint="Clinton, Clinton Country, NewYork"
+                android:inputType="textPostalAddress"
+                android:textColor="#666666"
+                android:textColorHint="#666666"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:id="@+id/tv_work"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="16dp"
+                android:drawableLeft="@drawable/icon_brifcase_mdpi"
+                android:drawablePadding="16dp"
+                android:drawableRight="@drawable/cross"
+                android:text="Work"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_workaddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="64dp"
+                android:background="@null"
+                android:hint="123, King Street"
+                android:inputType="textPostalAddress"
+                android:textColor="#666666"
+                android:textColorHint="#666666"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5pt"
+                android:background="#666666" />
+
+            <EditText
+                android:id="@+id/et_emergency"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_emergency_mdpi"
+                android:drawablePadding="16dp"
+                android:editable="false"
+                android:hint="Emergency Contact"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5pt"
+                android:background="#666666" />
+
+
+            <TextView
+                android:id="@+id/tv_signout1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/signout_white"
+                android:drawablePadding="16dp"
+                android:editable="false"
+                android:text="Signout"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/tv_signout_view"
+                android:layout_width="match_parent"
+                android:layout_height="0.5pt"
+                android:background="#666666" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

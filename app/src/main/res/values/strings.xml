@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">SafeTrip</string>
+
+
+    <string name="confirm_password">Confirm Password</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="signup">SIGNUP</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_navigation">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_confirmrequest">Map</string>
+    <string name="title_activity_enter_destination">Map</string>
+    <string name="title_activity_maps_testing">Map</string>
+    <string name="sharedPref">safe_trip_shared_pref</string>
+    <string name="Cancel">Cancel</string>
+    <string name="gps_network_not_enabled">GPS network not available. Please turn on the GPS provider from the settings.</string>
+    <string name="open_location_settings">Open Settings</string>
+    <string name="service_not_available">Location can\'t be updated as service is unavailable.</string>
+    <string name="invalid_lat_long_used">invalid latlng used</string>
+    <string name="no_address_found">No address found</string>
+    <string name="address_found">address found</string>
+
+
+    <string name="Usernameerror">Enter Your Username Name</string>
+    <string name="firstnameerror">Enter Your First Name</string>
+    <string name="mobileerror">Enter a valid mobile</string>
+    <string name="addresserror">Enter Address</string>
+    <string name="emailerror">Enter Email</string>
+    <string name="confirmemailerror">Email not Match</string>
+    <string name="passworderror">Enter Password</string>
+    <string name="confirmpassworderror">Password not Match</string>
+
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_phone">Enter the 10 Digit Phone No</string>
+    <string name="err_msg_password">The Password field must be at least 8 characters in length.</string>
+    <string name="err_rpt_msg_password">Enter the same password</string>
+    <string name="nameerror">Enter Your Name</string>
+    <string name="msgerror">Enter Message</string>
+    <string name="title_activity_cart">Cart</string>
+    <string name="title_activity_checkout">Checkout</string>
+
+    <string name="Rs">\u20B9</string>
+
+
+</resources>

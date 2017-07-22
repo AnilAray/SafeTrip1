@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black">
+
+    <include layout="@layout/toolbar2_activity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="16dp"
+            android:clickable="true"
+            android:background="@null"
+            android:text="I was charged a cancellation fee"
+            android:textColor="@android:color/white"
+            android:id="@+id/tv_cancellationfee"/>
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5pt"
+            android:background="#666666" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="16dp"
+            android:clickable="true"
+            android:background="@null"
+            android:text="I was involved in an accident"
+            android:textColor="@android:color/white"
+            android:id="@+id/tv_involvedaccident"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5pt"
+            android:background="#666666" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="16dp"
+            android:clickable="true"
+            android:background="@null"
+            android:text="I lost an item."
+            android:textColor="@android:color/white"
+            android:id="@+id/tv_lostitem"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5pt"
+            android:background="#666666" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:clickable="true"
+            android:layout_marginLeft="16dp"
+            android:background="@null"
+            android:text="My driver was unprofessional"
+            android:textColor="@android:color/white"
+            android:id="@+id/tv_unprofessional"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5pt"
+            android:background="#666666" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="16dp"
+            android:clickable="true"
+            android:background="@null"
+            android:text="My trip had a bad route"
+            android:textColor="@android:color/white"
+            android:id="@+id/tv_badroute"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5pt"
+            android:background="#666666" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:clickable="true"
+            android:layout_marginLeft="16dp"
+            android:background="@null"
+            android:text="I can't request a ride"
+            android:textColor="@android:color/white"
+            android:id="@+id/tv_cannotrequestride"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5pt"
+            android:background="#666666" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:clickable="true"
+            android:layout_marginLeft="16dp"
+            android:background="@null"
+            android:text="My viechle wasn't what I expected"
+            android:textColor="@android:color/white"
+            android:id="@+id/tv_viechleexpected"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5pt"
+            android:background="#666666" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

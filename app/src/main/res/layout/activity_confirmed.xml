@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:layout_width="match_parent">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="331dp"
+        tools:context="taxiapp.safetrip.ui.ConfirmedActivity"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        map:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="0.0"
+        android:layout_marginLeft="8dp"
+        map:layout_constraintLeft_toLeftOf="parent"
+        map:layout_constraintBottom_toTopOf="@+id/guideline"
+        map:layout_constraintHorizontal_bias="1.0" />
+
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="horizontal"
+        map:layout_constraintGuide_percent="0.5"
+        tools:layout_editor_absoluteY="284dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <Button android:id="@+id/button3"
+    android:layout_width="0dp"
+    android:layout_height="48dp"
+    android:text="Cancel"
+    android:textColor="#ffffff"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:textAllCaps="true"
+    android:background="@color/colorAccent"
+        android:layout_marginLeft="16dp"
+        map:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="16dp"
+        map:layout_constraintRight_toRightOf="parent"
+        map:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        map:layout_constraintHorizontal_bias="0.0"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        map:layout_constraintRight_toLeftOf="@+id/cardView4"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        map:layout_constraintBottom_toBottomOf="@+id/map"
+        android:layout_marginEnd="11dp"
+        map:layout_constraintTop_toBottomOf="@+id/map" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="643dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        map:layout_constraintRight_toRightOf="@+id/editText"
+        map:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:layout_constraintLeft_creator="1"
+        map:layout_constraintLeft_toLeftOf="@+id/editText" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:id="@+id/cardView4"
+        android:background="@drawable/background"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="24dp"
+        map:layout_constraintBottom_toBottomOf="@+id/cardView5"
+        tools:layout_constraintLeft_creator="1"
+        map:layout_constraintLeft_toLeftOf="@+id/button3"
+        map:layout_constraintTop_toTopOf="@+id/cardView5">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/background" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:text="JOHN DOE"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/avatar" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+
+        android:background="@drawable/background"
+        map:layout_constraintLeft_toRightOf="@+id/cardView4"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/cardView5"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        map:layout_constraintBottom_toTopOf="@+id/button3"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        map:layout_constraintTop_toBottomOf="@+id/map"
+        android:layout_marginBottom="6dp"
+        map:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/background" />
+
+        <TextView
+            android:id="@+id/tv_carnumber"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="16dp"
+            android:text="65HSD265"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_car"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/car_icon_confirmed" />
+
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

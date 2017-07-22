@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black">
+
+    <include layout="@layout/toolbar_activity"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="24dp"
+
+        android:layout_marginRight="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            android:text="October 21.2017 at 10.45am"
+            android:id="@+id/tv_ridetime"
+            android:layout_above="@+id/cardView3"
+            android:layout_alignEnd="@+id/cardView3"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="6dp" />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="330dp"
+            android:layout_height="100dp"
+
+            android:layout_above="@+id/tv_charged_fare"
+            android:layout_alignEnd="@+id/cardView2"
+            android:layout_marginBottom="4dp"
+            android:id="@+id/cardView3"
+            android:background="@drawable/background">
+
+            <TextView
+                android:id="@+id/tv_faredisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/background"
+                android:gravity="center"
+                android:text="$80.25"
+                android:textColor="#ffffff"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tv_charged_fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text=""
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_above="@+id/cardView"
+            android:layout_centerHorizontal="true" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:background="@drawable/background"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp">
+
+            <ImageView
+                android:src="@drawable/background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+
+
+            <TextView
+                android:id="@+id/tv_drivername"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="24dp"
+                android:text="JOHN DOE"
+                android:textSize="20sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_avtaar"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/avatar" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:background="@drawable/background"
+            android:layout_above="@+id/tv_pay"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="9dp">
+
+            <ImageView
+                android:src="@drawable/background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_car"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/car_icon_mdpi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:layout_marginLeft="16dp"
+                android:text="5Kwlx265"
+                android:textColor="#ffffff"
+                android:id="@+id/tv_carnumber"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tv_pay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/cardView"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/button_bg_mdpi"
+            android:gravity="center"
+            android:text="PAY"
+            android:clickable="true"
+            android:onClick="pay"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

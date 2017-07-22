@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/toolbar2_activity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        >
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/et_pickup_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/date_icon"
+            android:drawablePadding="8dp"
+            android:layout_marginStart="8dp"
+            android:editable="false"
+            android:hint="Pickup Date"
+            android:inputType="none"
+            android:gravity="center_vertical"
+            android:textColor="#F9F6F6"
+            android:textColorHint="#F9F6F6"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/pickuptime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/time"
+            android:drawablePadding="8dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="center_vertical"
+            android:editable="false"
+            android:hint="Pickup Time"
+            android:inputType="none"
+            android:textColor="#F9F6F6"
+            android:textColorHint="#F9F6F6"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/radio_btn_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:drawableLeft="@drawable/green_radio_icon"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="16dp"
+        android:text="Pickup Location"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:id="@+id/radio_btn_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:drawableLeft="@drawable/red_radio_icon"
+        android:drawablePadding="16dp"
+        android:drawableRight="@drawable/cross"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:text="Destination Location"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#96000000"
+        android:gravity="center">
+
+        <TextView
+
+            android:id="@+id/tv_premiumcar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:layout_marginStart="8dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/premium"
+            android:drawablePadding="8dp"
+            android:text="Premium Car"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:clickable="true"
+            android:text="Change"
+            android:textColor="#e94e2c"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="$17-22"
+            android:textColor="@android:color/white"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_fare"
+            android:layout_below="@+id/tv_fare"
+            android:layout_marginTop="4dp"
+            android:text="FARE ESTIMATE"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_bg_mdpi"
+        android:onClick="request"
+        android:text="Schedule"
+        android:textColor="@android:color/white"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="taxiapp.safetrip">
+
+    <!-- uses-feature -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <!-- permission -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".application.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <!-- activity -->
+        <activity
+            android:name=".UI.activity.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UI.activity.BaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.OtpSignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.NavigationAcivity"
+            android:process=":NavigationAcivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.CreateAccountActivity"
+            android:process=":NavigationAcivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.AboutUsActivity"
+            android:process=":NavigationAcivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.PrivacyPolicyActivity"
+            android:process=":NavigationAcivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.AccountSettingsActivity"
+            android:process=":NavigationAcivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.EditAccountActivity"
+            android:process=":NavigationAcivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.DestinationActivity"
+            android:process=":NavigationAcivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".UI.activity.ScheduleRideActivity"
+            android:process=":NavigationAcivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".UI.activity.HelpActivity"
+            android:process=":NavigationAcivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".UI.activity.TripHistoryActivity"
+            android:process=":NavigationAcivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.MyAccountActivity"
+            android:process=":NavigationAcivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- service -->
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+        <service
+            android:name=".services.FetchAddressIntentService"
+            android:exported="false" />
+
+        <!-- meta-data -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".UI.activity.AccountCreate"></activity>
+    </application>
+
+</manifest>

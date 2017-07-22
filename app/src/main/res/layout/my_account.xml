@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        tools:context=".ui.CreateAccountActivity">
+
+        <include layout="@layout/toolbar_invisible_back_activity" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_avtaar"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:onClick="zoomImage"
+                android:src="@drawable/avatar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="87dp"
+                android:layout_marginTop="8dp"
+                android:onClick="clickCallback"
+                android:src="@drawable/red_cam"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@+id/img_avtaar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.919" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_myaccount_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="16dp"
+                android:editable="false"
+                android:hint="First Name"
+                android:padding="8dp"
+                android:textColor="#F9F6F6"
+                android:textColorHint="#F9F6F6" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5pt"
+                android:background="#ffffff" />
+
+
+            <EditText
+                android:id="@+id/et_myaccount_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="16dp"
+                android:editable="false"
+                android:hint="Last Name"
+                android:padding="8dp"
+                android:textColor="#F9F6F6"
+                android:textColorHint="#F9F6F6" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5pt"
+                android:background="#ffffff" />
+
+
+            <EditText
+                android:id="@+id/et_myaccount_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="16dp"
+                android:editable="false"
+                android:hint="Address"
+                android:padding="8dp"
+                android:textColor="#F9F6F6"
+                android:textColorHint="#F9F6F6" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5pt"
+                android:background="#ffffff" />
+
+
+            <EditText
+                android:id="@+id/et_my_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/email_icon"
+                android:drawablePadding="16dp"
+                android:editable="false"
+                android:hint="Email"
+                android:padding="8dp"
+                android:textColor="#F9F6F6"
+                android:textColorHint="#F9F6F6" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5pt"
+                android:background="#ffffff" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_myaccount_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/colorAccent"
+        android:clickable="true"
+        android:onClick="clickCallback"
+        android:text="SAVE"
+        android:textColor="#F9F6F6"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="description_zoom_touch_close"
+        android:visibility="invisible"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>
